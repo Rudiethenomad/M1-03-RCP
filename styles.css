@@ -1,9 +1,12 @@
 
 body{
     margin:0;
-    background-color: bisque;
+    background-color:beige ;
+    height:100vh;
+    border:5px solid;color:green;
     
 }
+/*this is the parent div*/
 #card{
     
    display: inline-block;
@@ -12,7 +15,7 @@ body{
    
    
 }
-
+/*this is the top save button*/
 .icon{
     display:inline-block;
     position: absolute;
@@ -27,28 +30,34 @@ body{
     transform:translateX(-520px) ;
     transition: transform 1s;
    
-    
+  /*this is the bottom icons*/  
 }
-
+.icon-2{
+    display:inline-block;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    font-style: italic;
+    color:black;
+    border-radius: 10px;
+    margin-left:auto;
+    text-align: center;
+    background-color:white ;
+    transform:translateX(-520px) ;
+    transition: transform 1s;
+    margin-top: 450px;
+}
 .photo{
     display: inline-block;
-       
-    border-color: black;
-    margin-left: 25%;
-    margin-right: 25%;
+     border: 5px solid; color:orange;  
+   
+    margin-left: 35%;
+    margin-right: 35%;
     overflow:hidden;
     transition: box-shadow .5s;
+}
 
-
-
-  }
-  .photo img{
-    
-    border-color: black;
-    border-radius:10px;
-
-    
-  }
+ 
 
   .photo:hover{
     box-shadow:0 10px 30px rgba(0, 0, 0, 0.55); 
