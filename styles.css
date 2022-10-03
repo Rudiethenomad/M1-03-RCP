@@ -1,7 +1,7 @@
 
 body{
     margin:0;
-    background-color:beige ;
+    background-image:url(https://th.bing.com/th/id/OIP.YfKTJbPe8zXVd3vNPwIVRwHaEK?pid=ImgDet&rs=1) ;
     height:100vh;
     border:5px solid;color:green;
     
@@ -9,10 +9,10 @@ body{
 /*this is the parent div*/
 #card{
     
-   display: inline-block;
+   display: inlineblock;
    border-radius: 10px;
    margin-top: 20vh;
-   
+
    
 }
 /*this is the top save button*/
@@ -20,14 +20,17 @@ body{
     display:inline-block;
     position: absolute;
     font-family: 'Roboto', sans-serif;
-    font-size: 3em;
+    font-size: 1.5em;
     font-style: italic;
-    color:black;
+    color:white;
     border-radius: 10px;
-    margin-left: 315px;
-    
-    background-color:white ;
-    transform:translateX(-520px) ;
+    margin-left: 580px;
+    height:1.5em;
+    width: 5em;
+    background-color:red ;
+    text-align: center;
+
+    transform:translateX(-720px) ;
     transition: transform 1s;
    
   /*this is the bottom icons*/  
@@ -36,21 +39,21 @@ body{
     display:inline-block;
     position: absolute;
     font-family: 'Roboto', sans-serif;
-    font-size: 3em;
+    font-size: 1.8em;
     font-style: italic;
     color:black;
-    border-radius: 10px;
-    margin-left:auto;
+    width:19em;
+    margin: auto;
     text-align: center;
     background-color:white ;
     transform:translateX(-520px) ;
     transition: transform 1s;
-    margin-top: 450px;
+    margin-top: 530px;
 }
 .photo{
     display: inline-block;
-     border: 5px solid; color:orange;  
-   
+    border: 5px solid; color:orange;  
+    border-radius: 15px;
     margin-left: 35%;
     margin-right: 35%;
     overflow:hidden;
@@ -69,7 +72,7 @@ body{
     bottom: 0;
     left:0;
     right:0;
-
+   
   }
   .photo:hover .icon{
     transform:translateX(0px);
