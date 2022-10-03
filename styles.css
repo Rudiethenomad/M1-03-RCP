@@ -23,7 +23,23 @@ body{
     margin-right: 35%;
    border-color: aliceblue;
     border: 15px;
+    transition: box-shadow 1s;
 }
+
+#card-overlay{
+    position:absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0,;
+    background: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5) 0%,
+    rgba(0,0,0,0,) 20%
+    );
+    
+}
+
 
 img{
     border-color: aliceblue;
@@ -65,7 +81,7 @@ img{
 }
  
 #card:hover{
-    box-shadow: 0 10px 30px orange;
+    box-shadow: 0 20px 30px  orange;
     
 }
 #card:hover .icon{
