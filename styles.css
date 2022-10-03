@@ -1,19 +1,27 @@
 
 body{
+    
     margin:0;
-    background-image:url(https://th.bing.com/th/id/OIP.YfKTJbPe8zXVd3vNPwIVRwHaEK?pid=ImgDet&rs=1) ;
+     background-image:url(https://th.bing.com/th/id/OIP.YfKTJbPe8zXVd3vNPwIVRwHaEK?pid=ImgDet&rs=1) ; 
     height:100vh;
-    border:5px solid;color:green;
+    border:10px solid;color:green;
     
 }
-/*this is the parent div*/
-#card{
-    
-   display: inlineblock;
-   border-radius: 10px;
-   margin-top: 20vh;
 
+
+#card{
+    position: relative;
+    display: inline-block;
+
+    border-radius: 15px;
+    margin-top: 20vh;
+    margin-left: 35%;
+    margin-right: 35%;
    
+}
+
+img{
+    border-radius: 15px;
 }
 /*this is the top save button*/
 .icon{
@@ -24,16 +32,19 @@ body{
     font-style: italic;
     color:white;
     border-radius: 10px;
-    margin-left: 580px;
+    margin-left: 400px;
     height:1.5em;
     width: 5em;
     background-color:red ;
     text-align: center;
-
-    transform:translateX(-720px) ;
+    cursor:pointer;
+    transform:translateX(-520px) ;
     transition: transform 1s;
+
+
    
-  /*this is the bottom icons*/  
+  /*this is the bottom icons*/ 
+     
 }
 .icon-2{
     display:inline-block;
@@ -46,34 +57,16 @@ body{
     margin: auto;
     text-align: center;
     background-color:white ;
+    margin-top: 530px;
+    cursor:pointer;
     transform:translateX(-520px) ;
     transition: transform 1s;
-    margin-top: 530px;
 }
-.photo{
-    display: inline-block;
-    border: 5px solid; color:orange;  
-    border-radius: 15px;
-    margin-left: 35%;
-    margin-right: 35%;
-    overflow:hidden;
-    transition: box-shadow .5s;
-}
-
  
-
-  .photo:hover{
-    box-shadow:0 10px 30px rgba(0, 0, 0, 0.55); 
-    transition: box-shadow .5s;
-  }
-  .photo-overlay{
-    position: absolute; 
-    top:0;
-    bottom: 0;
-    left:0;
-    right:0;
-   
-  }
-  .photo:hover .icon{
+#card:hover{
+    box-shadow: 0 10px 30px orange;
+    
+}
+#card:hover .icon{
     transform:translateX(0px);
-  }
+}
