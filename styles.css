@@ -2,26 +2,32 @@
 body{
     
     margin:0;
+
      background-image:url(https://th.bing.com/th/id/OIP.YfKTJbPe8zXVd3vNPwIVRwHaEK?pid=ImgDet&rs=1) ; 
+   
     height:100vh;
+    
     border:10px solid;color:green;
     
 }
 
 
 #card{
+    
     position: relative;
     display: inline-block;
-
+    overflow:hidden;
     border-radius: 15px;
     margin-top: 20vh;
     margin-left: 35%;
     margin-right: 35%;
-   
+   border-color: aliceblue;
+    border: 15px;
 }
 
 img{
-    border-radius: 15px;
+    border-color: aliceblue;
+   
 }
 /*this is the top save button*/
 .icon{
@@ -40,25 +46,20 @@ img{
     cursor:pointer;
     transform:translateX(-520px) ;
     transition: transform 1s;
-
-
+    margin-top: 15px;
+    padding-top: 5px;
+    
    
   /*this is the bottom icons*/ 
      
 }
 .icon-2{
-    display:inline-block;
-    position: absolute;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.8em;
-    font-style: italic;
-    color:black;
-    width:19em;
-    margin: auto;
-    text-align: center;
-    background-color:white ;
-    margin-top: 530px;
-    cursor:pointer;
+    font-size: x-large ;
+    position: absolute; 
+    bottom: 0;
+    left:0;
+    right:0;
+    color:white;
     transform:translateX(-520px) ;
     transition: transform 1s;
 }
@@ -69,4 +70,28 @@ img{
 }
 #card:hover .icon{
     transform:translateX(0px);
+}
+#card:hover .icon-2{
+    transform:translateX(0px); 
+}
+/* this is the container for the text on the first bottom */
+.oval{
+    color:black;
+    padding-left: 26px;
+    padding-top:16px;
+    
+
+    
+}
+/* this is the parent of the oval, first on bottom */
+.btn-1{
+
+    display: inline-block;
+    background-color: white;
+    margin-left: 10px;
+    margin-bottom:2%;
+    text-align: center;
+    border-radius: 10px;
+    padding-bottom: 15px;
+    padding-right:15px;
 }
